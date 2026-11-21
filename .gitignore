@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.env
+*.log
+fleet_state.json
+fleet_events.log
+*.bak-*
+.pytest_cache/

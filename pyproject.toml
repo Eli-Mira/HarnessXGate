@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harnessxgate"
+version = "1.0.0"
+description = "One-command free AI router, live web dashboard, and MCP server unifying OpenCode, GitHub Copilot CLI, FreeLLMAPI, and Ollama with automatic model & engine failover."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "EliLain" }]
+keywords = ["ai", "mcp", "router", "opencode", "copilot", "ollama", "free-llm", "failover"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Eli-Mira/HarnessXGate"
+Repository = "https://github.com/Eli-Mira/HarnessXGate"
+
+[project.scripts]
+hxg = "harnessxgate.cli:main"
+harnessxgate = "harnessxgate.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["harnessxgate*"]
